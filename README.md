@@ -20,11 +20,11 @@ This is the backend for the Event Requirement Posting Application, built with No
    npm install
    ```
 
-3. **Environment Variables**: Create a `.env` file in the root directory (one is provided for local setup):
-   ```env
-   PORT=5000
-   MONGO_URI=mongodb://127.0.0.1:27017/event_requirements
+3. **Environment Variables**: Create a `.env.local` file in the root directory by copying `.env.example`:
+   ```bash
+   cp .env.example .env.local
    ```
+   Ensure `NEXT_PUBLIC_API_URL` points to your active backend service.
 
 4. **Running the Server**:
    - For development (with nodemon):
